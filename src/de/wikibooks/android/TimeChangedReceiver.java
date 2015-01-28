@@ -11,7 +11,7 @@ public class TimeChangedReceiver extends BroadcastReceiver {
 	public void onReceive(Context context, Intent intent) {
 		String action = intent.getAction();
 		if (action.equals(Intent.ACTION_TIME_CHANGED)) {
-			Toast.makeText(context, "Zeit Changed", Toast.LENGTH_LONG).show();
+			Toast.makeText(context, "Zeit Changedxxx", Toast.LENGTH_LONG).show();
 		} else if (action.equals(Intent.ACTION_TIMEZONE_CHANGED)) {
 			showTimezone(context, intent.getStringExtra("time-zone"));
 		}
